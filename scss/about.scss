@@ -1,0 +1,526 @@
+$color-green: #009345;
+$color-blue: #311B92;
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+    // overflow-x: hidden;
+}
+
+html {
+    margin: 0 !important;
+    padding: 0 !important;
+    // overflow-x: hidden;
+}
+
+.bg-img {
+    // background-image: url('../images/About_Us/about1-01.jpg') !important;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    width: auto;
+}
+
+.phone_book_button {
+    padding: 15px 0 !important;
+}
+
+.phone_book {
+    float: right;
+
+    p {
+        a {
+            list-style-type: none;
+            text-decoration: none;
+            background-color: white;
+            padding: 10px 12px;
+            border-radius: 12px;
+            font-size: 14px;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+    }
+
+    button {
+        background-color: $color-green;
+        border: none;
+        font-size: 14px;
+        padding: 9px 12px;
+        border-radius: 12px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        color: white;
+    }
+}
+
+.navigation {
+    height: 70px;
+    background: white;
+    width: 100%;
+    border-radius: 15px !important;
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.brand {
+    position: absolute;
+    padding-left: 20px;
+    float: left;
+    line-height: 70px;
+    text-transform: uppercase;
+
+    a {
+        color: #4B6985;
+        text-decoration: none;
+
+        &:visited {
+            color: #4B6985;
+            text-decoration: none;
+        }
+    }
+}
+
+nav {
+    float: right;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            float: left;
+            position: relative;
+
+            a {
+                display: block;
+                font-size: 18px;
+                padding: 0 20px;
+                line-height: 70px;
+                background: white;
+                color: #4B6985;
+                text-decoration: none !important;
+                font-weight: 400;
+                font-family: 'Lato', sans-serif;
+
+                &:not(:only-child) {
+                    &:after {
+                        padding-left: 4px;
+                        content: ' ▾';
+                    }
+                }
+            }
+
+            ul {
+                li {
+                    min-width: 100%;
+
+                    a {
+                        padding: 15px;
+                        line-height: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.nav-dropdown {
+    position: absolute;
+    z-index: 1;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+    display: none;
+    width: 250px !important;
+
+    img {
+        margin-right: 15px;
+        float: right;
+    }
+}
+
+#about_head h1 {
+    font-size: 4vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900 !important;
+    text-transform: capitalize;
+    text-align: center;
+    // display: inline-block;
+    margin-top: 50px;
+    color: $color-green;
+}
+
+.who_we_are {
+    h2 {
+        font-size: 34px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    p {
+        font-family: "Lato", sans-serif;
+        font-size: 18px !important;
+        line-height: 1.5em;
+    }
+}
+
+.physio_at_home {
+    h2 {
+        font-size: 34px;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    p {
+        font-family: "Lato", sans-serif;
+        font-size: 18px !important;
+        line-height: 1.5em;
+    }
+}
+
+.our_vision {
+    margin-bottom: 100px;
+
+    h1 {
+        font-size: 4vw;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900 !important;
+        text-transform: capitalize;
+        text-align: center;
+        // display: inline-block;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .card {
+
+        position: relative;
+        // -webkit-box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+        box-shadow:
+            0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+            0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+            0 12.5px 10px rgba(0, 0, 0, 0.06),
+            0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+            0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+            0 100px 80px rgba(0, 0, 0, 0.12);
+        -webkit-transition: .5s;
+        transition: all .2s ease-in-out;
+        border: none;
+        border-radius: 15px;
+    }
+
+    .card:hover {
+        transform: scale(1.1);
+    }
+
+    .card-body {
+        background-color: $color-green;
+        color: white;
+
+        p {
+            font-family: "Lato", sans-serif;
+            font-size: 18px;
+        }
+    }
+}
+
+.footer {
+    background: #2F363F;
+    color: white;
+
+    h3 {
+        font-size: 22px;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-family: "Poppins", sans-serif;
+        font-size: 14px;
+    }
+
+    .fa {
+        font-size: 22px;
+        justify-content: space-around;
+        margin-right: 20px;
+        display: inline-block;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    p {
+        font-size: 14px;
+        font-family: "Poppins", sans-serif;
+
+        a {
+            font-size: 14px;
+            font-family: "Poppins", sans-serif;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .navigation {
+        width: 100%;
+
+        .brand img {
+            width: 100px;
+        }
+    }
+
+    .nav-mobile {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 30px;
+        width: 30px;
+        display: block;
+    }
+
+    .phone_book p a {
+        font-size: 12px;
+        background-color: $color-blue;
+        color: white;
+    }
+
+    .phone_book p button {
+        font-size: 12px;
+    }
+
+    nav {
+        width: 100%;
+        // padding: 70px 0 15px;
+        position: relative;
+
+        ul {
+            display: none;
+            display: none;
+
+            li {
+                float: none;
+
+                a {
+                    padding: 15px;
+                    line-height: 20px;
+                    font-size: 14px;
+                }
+
+                ul {
+                    li {
+                        a {
+                            padding-left: 30px;
+                            font-size: 13px;
+                        }
+                    }
+                }
+            }
+        }
+
+        li {
+            width: 100% !important;
+
+            a {
+                text-decoration: none !important;
+                width: 100% !important;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .nav-dropdown {
+        position: static;
+        width: 100% !important;
+    }
+
+    #nav-toggle {
+        position: absolute;
+        left: -18px;
+        top: 22px;
+        cursor: pointer;
+        padding: 10px 35px 16px 0px;
+
+        span {
+            cursor: pointer;
+            border-radius: 1px;
+            height: 3px;
+            width: 25px;
+            background: #4B6985;
+            position: absolute;
+            display: block;
+            content: '';
+            transition: all 300ms ease-in-out;
+
+            &:before {
+                cursor: pointer;
+                border-radius: 1px;
+                height: 3px;
+                width: 25px;
+                background: #4B6985;
+                position: absolute;
+                display: block;
+                content: '';
+                transition: all 300ms ease-in-out;
+                top: -10px;
+            }
+
+            &:after {
+                cursor: pointer;
+                border-radius: 1px;
+                height: 3px;
+                width: 25px;
+                background: #4B6985;
+                position: absolute;
+                display: block;
+                content: '';
+                transition: all 300ms ease-in-out;
+                bottom: -10px;
+            }
+        }
+    }
+
+    #nav-toggle.active {
+        span {
+            background-color: transparent;
+
+            &:before {
+                top: 0;
+                transform: rotate(45deg);
+            }
+
+            &:after {
+                top: 0;
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    .bg-img {
+        // background-image: url('../images/About_Us/about1-01.jpg') !important;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        height: 500px;
+        width: 100%;
+        margin-bottom: 40px;
+        background-image: none !important;
+    }
+
+    .phone_book {
+        p {
+            text-align: center;
+        }
+    }
+
+    .col-xs-12 {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 0 !important;
+    }
+
+    #about_head {
+        h1 {
+            font-size: 34px;
+            margin-top: 20px;
+        }
+    }
+
+    .who_we_are {
+        h2 {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 0;
+            margin-top: 30px;
+        }
+
+        .col-sm-6 {
+            img {
+                height: auto;
+                width: auto;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+            }
+
+            p {
+                font-size: 16px !important;
+            }
+        }
+    }
+
+    .physio_at_home {
+        .col-sm-6 {
+            img {
+                height: auto;
+                width: auto;
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                float: left;
+            }
+
+            h2 {
+                font-size: 24px;
+                text-align: left;
+                margin-bottom: 0;
+                margin-top: 30px;
+            }
+
+            p {
+                font-size: 16px !important;
+                text-align: left;
+            }
+        }
+    }
+
+    .our_vision {
+        margin-bottom: 0;
+        h1 {
+            font-size: 34px;
+            margin-top: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .col-sm-4{
+            .card{
+                margin-left: auto;
+                margin-right: auto;
+                display: block;
+                margin-bottom: 30px;
+                // margin-top: 30px;
+                img{
+                    height: 300;
+                    width: 300;
+                }
+            }
+            .card-body p{
+                font-size: 14px;
+            }
+        }
+    }
+
+    .footer {
+        .col-sm-3 {
+            margin-top: 10 !important;
+        }
+
+        h3 {
+            font-size: 16px;
+        }
+
+        p a {
+            font-size: 12px;
+        }
+
+        .col-sm-4 p {
+            font-size: 12px !important;
+            text-align: center;
+        }
+
+        .col-sm-8 p {
+            text-align: center;
+        }
+    }
+}
